@@ -1,4 +1,4 @@
-# Errata for *Book Title*
+# Errata for *Building Solutions with Microsoft Teams*
 
 On **page xx** [Summary of error]:
  
