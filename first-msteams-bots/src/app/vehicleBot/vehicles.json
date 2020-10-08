@@ -1,0 +1,36 @@
+[{
+        "id": "1",
+        "name": "Bus",
+        "summary": "A bus is a road vehicle designed to carry many passengers. Buses can have a capacity as high as 300 passengers. The most common type is the single-deck rigid bus, with larger loads carried by double-decker and articulated buses, and smaller loads carried by midibuses and minibuses while coaches are used for longer-distance services. Many types of buses, such as city transit buses and inter-city coaches, charge a fare.",
+        "wikiLink": "https://en.wikipedia.org/wiki/Bus",
+        "imageLink": "https://en.wikipedia.org/wiki/File:LT_471_(LTZ_1471)_Arriva_London_New_Routemaster_(19522859218).jpg"
+    },
+    {
+        "id": "2",
+        "name": "Truck",
+        "summary": "A truck or lorry is a motor vehicle designed to transport cargo. Trucks vary greatly in size, power, and configuration; smaller varieties may be mechanically similar to some automobiles. Commercial trucks can be very large and powerful and may be configured to be mounted with specialized equipment, such as in the case of refuse trucks, fire trucks, concrete mixers, and suction excavators. In American English, a commercial vehicle without a trailer or other articulation is formally a straight truck while one designed specifically to pull a trailer is not a truck but a tractor",
+        "wikiLink": "https://en.wikipedia.org/wiki/Truck",
+        "imageLink": "https://en.wikipedia.org/wiki/File:Freightliner_M2_106_6x4_2014_(14240376744).jpg"
+    },
+    {
+        "id": "3",
+        "name": "Bicycle",
+        "summary": "A bicycle, also called a bike or cycle, is a human-powered or motor-powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other. A bicycle rider is called a cyclist, or bicyclist.",
+        "wikiLink": "https://en.wikipedia.org/wiki/Bicycle",
+        "imageLink": "https://en.wikipedia.org/wiki/File:Left_side_of_Flying_Pigeon.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Motorcycle",
+        "summary": "A motorcycle, often called a motorbike, bike, or cycle, is a two- or three-wheeled motor vehicle.[1] Motorcycle design varies greatly to suit a range of different purposes: long distance travel, commuting, cruising, sport including racing, and off-road riding. Motorcycling is riding a motorcycle and related social activity such as joining a motorcycle club and attending motorcycle rallies.",
+        "wikiLink": "https://en.wikipedia.org/wiki/Motorcycle",
+        "imageLink": "https://en.wikipedia.org/wiki/File:Norton_Motorcycle.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Auto rickshaw",
+        "summary": "The auto rickshaw is a common form of urban transport, both as a vehicle for hire and for private use, in many countries around the world, especially those with tropical or subtropical climates, including many developing countries. As of 2019, Bajaj Auto of Pune, India is the world's largest auto rickshaw manufacturer, selling 780,000 during the fiscal year.",
+        "wikiLink": "https://en.wikipedia.org/wiki/Auto_rickshaw",
+        "imageLink": "https://en.wikipedia.org/wiki/File:Bajaj_auto-rickshaw_in_Sri_Lanka.jpg"
+    }
+]

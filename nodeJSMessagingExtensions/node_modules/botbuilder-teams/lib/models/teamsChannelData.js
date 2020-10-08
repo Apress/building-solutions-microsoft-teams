@@ -1,0 +1,50 @@
+'use strict';
+const models = require('./index');
+class TeamsChannelData {
+    constructor() {
+    }
+    mapper() {
+        return {
+            required: false,
+            serializedName: 'TeamsChannelData',
+            type: {
+                name: 'Composite',
+                className: 'TeamsChannelData',
+                modelProperties: {
+                    channel: {
+                        required: false,
+                        serializedName: 'channel',
+                        type: {
+                            name: 'Composite',
+                            className: 'ChannelInfo'
+                        }
+                    },
+                    eventType: {
+                        required: false,
+                        serializedName: 'eventType',
+                        type: {
+                            name: 'String'
+                        }
+                    },
+                    team: {
+                        required: false,
+                        serializedName: 'team',
+                        type: {
+                            name: 'Composite',
+                            className: 'TeamInfo'
+                        }
+                    },
+                    tenant: {
+                        required: false,
+                        serializedName: 'tenant',
+                        type: {
+                            name: 'Composite',
+                            className: 'TenantInfo'
+                        }
+                    }
+                }
+            }
+        };
+    }
+}
+module.exports = TeamsChannelData;

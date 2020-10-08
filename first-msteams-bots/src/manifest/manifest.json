@@ -1,0 +1,53 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.6",
+    "id": "{{APPLICATION_ID}}",
+    "version": "{{VERSION}}",
+    "packageName": "{{PACKAGE_NAME}}",
+    "developer": {
+        "name": "JPOWER4",
+        "websiteUrl": "https://{{HOSTNAME}}",
+        "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+        "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+    },
+    "name": {
+        "short": "Vehicle Messaging",
+        "full": "Vehicle Messaging"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [{
+        "botId": "1ad3a766-9629-44e5-b76c-c1256a8080ec",
+        "canUpdateConfiguration": false,
+        "commands": [{
+            "id": "vehicleExpanderAction",
+            "type": "action",
+            "title": "Vehicle Expander",
+            "description": "Lookup the details of a vehicle.",
+            "context": [
+                "compose",
+                "message"
+            ],
+            "fetchTask": true
+        }]
+    }],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "{{HOSTNAME}}"
+    ],
+    "showLoadingIndicator": false
+}

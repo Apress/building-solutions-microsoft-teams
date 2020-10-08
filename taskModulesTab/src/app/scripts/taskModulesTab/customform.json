@@ -1,0 +1,57 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [{
+            "type": "Container",
+            "items": [{
+                "type": "TextBlock",
+                "text": "Custom Form",
+                "weight": "bolder",
+                "size": "extraLarge"
+            }]
+        },
+        {
+            "type": "Container",
+
+            "items": [{
+                    "type": "TextBlock",
+                    "text": "Enter your name",
+                    "weight": "bolder",
+                    "size": "medium"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "name",
+                    "value": ""
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Enter your Email",
+                    "weight": "bolder",
+                    "size": "medium"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "email",
+                    "value": ""
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Enter your Designation",
+                    "weight": "bolder",
+                    "size": "medium"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "designation",
+                    "value": ""
+                }
+            ]
+        }
+    ],
+    "actions": [{
+        "type": "Action.Submit",
+        "title": "Submit"
+    }]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "first-teamsspfxtab-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/firstTeamsspfxtab/FirstTeamsspfxtabWebPart.js",
+          "manifest": "./src/webparts/firstTeamsspfxtab/FirstTeamsspfxtabWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FirstTeamsspfxtabWebPartStrings": "lib/webparts/firstTeamsspfxtab/loc/{locale}.js"
+  }
+}

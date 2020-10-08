@@ -1,0 +1,17 @@
+{
+  "name": "nodejsmessagingextensions",
+  "version": "1.0.0",
+  "description": "Message Extension with nodejs",
+  "main": "getBooks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JPOWER4",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.13.1",
+    "botbuilder-teams": "^0.2.9",
+    "ngrok": "^3.2.7",
+    "restify": "^8.5.1"
+  }
+}

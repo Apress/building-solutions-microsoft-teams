@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <title>Microsoft Teams Tab</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+    <mgt-teams-provider client-id="3229da43-347e-4fd5-8300-695f6ce1d2a3" auth-popup-url="https://3d1c546417aa.ngrok.io/auth.html"></mgt-teams-provider>
+    <mgt-login></mgt-login>
+    <mgt-person id="with-presence" person-query="me" person-card="hover" view="twoLines" show-presence></mgt-person>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [{
+            "type": "Container",
+            "items": [{
+                "type": "TextBlock",
+                "text": "My adaptive card response",
+                "weight": "bolder",
+                "size": "large"
+            }]
+        },
+        {
+            "type": "Container",
+            "items": [{
+                "type": "TextBlock",
+                "text": "Now you learned how to receive response from bot by using adaptive card.",
+                "wrap": true
+            }]
+        }
+    ],
+    "actions": [{
+            "type": "Action.OpenUrl",
+            "title": "My Blog Page",
+            "url": "http://jenkinsblogs.com"
+        },
+        {
+            "type": "Action.Submit",
+            "title": "Create new thread in this channel",
+            "data": { "cardAction": "newconversation" }
+        }
+
+    ]
+}

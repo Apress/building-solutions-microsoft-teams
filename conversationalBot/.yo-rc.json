@@ -1,0 +1,11 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "JPOWER4",
+      "unitTestsEnabled": false,
+      "useAzureAppInsights": false
+    },
+    "libraryName": "conversationalBot",
+    "generator-version": "2.14.0"
+  }
+}

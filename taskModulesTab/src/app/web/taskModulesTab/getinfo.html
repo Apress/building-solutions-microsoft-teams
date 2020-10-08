@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        
+        html,
+        body,
+        div.surface,
+        div.panel {
+            height: 100%;
+            margin: 0;
+        }
+        
+        div.panel {
+            padding: 15px;
+        }
+    </style>
+    <title>Microsoft Teams Task Module Tester - Custom Form</title>
+    <script src="https://unpkg.com/@microsoft/teams-js@1.3.7/dist/MicrosoftTeams.min.js" integrity="sha384-glExfvkpce98dO2oN+diZ/Luv/5qrZJiOvWCeR8ng/ZxlhpvBgHKeVFRURrh+NEC" crossorigin="anonymous"></script>
+</head>
+
+<body class="theme-light">
+    <script>
+        microsoftTeams.initialize();
+
+        //- Handle the Esc key
+        document.onkeyup = function(event) {
+            if ((event.key === 27) || (event.key === "Escape")) {
+                microsoftTeams.tasks.submitTask(null); //- this will return an err object to the completionHandler() 
+            }
+        }
+
+        function validateForm() {
+            let customerInfo = {
+                name: document.forms["customerForm"]["name"].value,
+                email: document.forms["customerForm"]["email"].value,
+                designation: document.forms["customerForm"]["designation"].value
+            }
+
+            microsoftTeams.tasks.submitTask(customerInfo, "");
+            return true;
+        }
+    </script>
+    <div class="surface">
+        <div class="panel">
+            <div class="font-semibold font-title">Enter employee information:</div>
+            <form method="POST" id="customerForm" action="/register" onSubmit="return validateForm()">
+                <div>
+                    <table>
+                        <tr>
+                            <td><label for="name">Enter the Name : </label></td>
+                            <td><input class="form-control input-field" id="name" type="text" placeholder="Full Name" name="name" tabindex="1" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Enter the Email ID : </label></td>
+                            <td><input class="form-control input-field" id="email" type="email" placeholder="name@email.com" name="email" tabindex="2"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="designation">Enter the Designation: </label></td>
+                            <td><input class="form-control input-field" id="designation" type="text " placeholder="designation" name="designation" tabindex="3" </td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td colspan="2"><button class="btn button-primary " type="submit " tabindex="5 ">Submit</button></td>
+                        </tr>
+                    </table>
+            </form>
+            </div>
+        </div>
+</body>
+
+</html>

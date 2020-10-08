@@ -1,0 +1,46 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.6",
+    "id": "{{APPLICATION_ID}}",
+    "version": "{{VERSION}}",
+    "packageName": "{{PACKAGE_NAME}}",
+    "developer": {
+        "name": "JPOWER4",
+        "websiteUrl": "https://{{HOSTNAME}}",
+        "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+        "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+    },
+    "name": {
+        "short": "Personal Tab",
+        "full": "Personal Tab"
+    },
+    "description": {
+        "short": "This exercise will guide you on how to create a custom personal tab",
+        "full": "This exercise will guide you on how to create a custom personal tab"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [{
+        "entityId": "personaldata",
+        "name": "My Tab",
+        "contentUrl": "https://{{HOSTNAME}}/myTab/",
+        "scopes": [
+            "personal"
+        ]
+    }],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "{{HOSTNAME}}"
+    ],
+    "showLoadingIndicator": false
+}

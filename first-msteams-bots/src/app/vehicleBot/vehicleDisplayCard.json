@@ -1,0 +1,43 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [{
+            "id": "cardHeader",
+            "type": "Container",
+            "items": [{
+                "id": "vehicleName",
+                "type": "TextBlock",
+                "weight": "bolder",
+                "size": "medium"
+            }]
+        },
+        {
+            "type": "Container",
+            "id": "cardBody",
+            "items": [{
+                    "id": "vehicleSummary",
+                    "type": "TextBlock",
+                    "wrap": true
+                },
+                {
+                    "id": "vehicleDetails",
+                    "type": "ColumnSet",
+                    "columns": [{
+                        "type": "Column",
+                        "width": "100",
+                        "items": [{
+                            "id": "vehicleImage",
+                            "size": "stretch",
+                            "type": "Image"
+                        }]
+                    }]
+                }
+            ]
+        }
+    ],
+    "actions": [{
+        "type": "Action.OpenUrl",
+        "title": "Learn more on Wikipedia"
+    }]
+}

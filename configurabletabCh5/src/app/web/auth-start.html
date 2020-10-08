@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="https://statics.teams.cdn.office.net/sdk/v1.5.2/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.17/js/adal.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        microsoftTeams.initialize();
+        microsoftTeams.getContext(function(msTeamsContext) {
+
+            // ADAL.js configuration
+            let config = {
+                clientId: "24793333-7f4d-486b-a6cd-1c57121be2eb",
+                redirectUri: window.location.origin + "/auth-end.html",
+                cacheLocation: "localStorage",
+                endpoints: {
+                    "https://graph.microsoft.com": "https://graph.microsoft.com"
+                },
+                extraQueryParameter: "scope=openid+profile&login_hint=" + encodeURIComponent(msTeamsContext.loginHint),
+            };
+
+
+
+            // login
+            let authContext = new AuthenticationContext(config);
+
+            let token = authContext.getCachedToken(config.clientId);
+            alert(token);
+
+            authContext.clearCache();
+
+
+
+            authContext.login();
+        });
+
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+    </script>
+</body>
+
+</html>

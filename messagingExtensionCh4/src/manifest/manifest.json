@@ -1,0 +1,68 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.6",
+    "id": "{{APPLICATION_ID}}",
+    "version": "{{VERSION}}",
+    "packageName": "{{PACKAGE_NAME}}",
+    "developer": {
+        "name": "JPOWER4",
+        "websiteUrl": "https://{{HOSTNAME}}",
+        "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+        "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+    },
+    "name": {
+        "short": "Get Books App",
+        "full": "To get books using ISBN number"
+    },
+    "description": {
+        "short": "Messaging extension Teams App to get books",
+        "full": "Messaging extension Teams App to get books using ISBN number"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [{
+        "botId": "{{MICROSOFT_APP_ID}}",
+        "canUpdateConfiguration": false,
+        "commands": [{
+            "id": "getBooksMessageExtension",
+            "title": "Get Books",
+            "description": "Search for a Book",
+            "initialRun": true,
+            "type": "query",
+            "context": [
+                "compose"
+            ],
+            "parameters": [{
+                "name": "searchKeyword",
+                "description": "Enter ISBN number to search",
+                "title": "ISBN Number"
+            }],
+
+            "fetchTask": true
+        }],
+        "messageHandlers": [{
+            "type": "link",
+            "value": {
+                "domains": [
+                    "*.wikipedia.org"
+                ]
+            }
+        }]
+    }],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "{{HOSTNAME}}",
+        "*.wikipedia.org"
+    ],
+    "showLoadingIndicator": false
+}
