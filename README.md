@@ -1,9 +1,9 @@
 # Apress Source Code
 
-This repository accompanies [*%title%*](https://www.apress.com/%isbn%) by %author% (Apress, %pubyear%).
+This repository accompanies [*Building Solutions with Microsoft Teams*](https://www.apress.com/9781484264751) by Jenkins NS (Apress, 2020).
 
 [comment]: #cover
-![Cover image](%isbn%.jpg)
+![Cover image](9781484264751.jpg)
 
 Download the files as a zip using the green button, or clone the repository to your machine using Git.
 
